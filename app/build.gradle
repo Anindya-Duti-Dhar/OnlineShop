@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "demoapp.com.navtabgrid"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+    // Google Material Design
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:recyclerview-v7:25.1.0'
+    // Circle ImageView
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    // round shape imageView
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    // Material spinner
+    compile 'com.jaredrummler:material-spinner:1.1.0'
+    // pinch out animation
+    compile 'hanks.xyz:smallbang-library:0.1.2'
+    // search action library
+    compile 'org.immutables:gson:2.1.0.alpha'
+    // Material Success Dialog
+    compile 'cn.pedant.sweetalert:library:1.3'
+    // material Statusbar
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    // For Checking App Version
+    compile 'org.jsoup:jsoup:1.10.2'
+    // load image from server
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // woo-commerce
+    compile 'org.scribe:scribe:1.3.5'
+    // circular progress
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    // material rating
+    compile 'com.github.sujithkanna:smileyrating:1.4'
+    // facebook SDK
+    compile 'com.facebook.android:facebook-android-sdk:4.18.0'
+}

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.learn2crack.navigationdrawer.MainActivity">
+
+    <item
+        android:id="@+id/wishList"
+        android:orderInCategory="100"
+        android:title="@string/action_wish"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/howToBuy"
+        android:orderInCategory="100"
+        android:title="@string/action_howToBuy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/returnPolicy"
+        android:orderInCategory="100"
+        android:title="@string/action_returnPolicy"
+        app:showAsAction="never" />
+
+</menu>

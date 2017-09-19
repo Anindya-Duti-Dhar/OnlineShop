@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Reverie Shop</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">সেটিংস</string>
+
+    <string name="action_cart">My Carts</string>
+    <string name="action_wish">My Wishes</string>
+    <string name="action_howToBuy">How to buy</string>
+    <string name="action_returnPolicy">Return Policy</string>
+    <string name="action_loginLogout">Logout</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="product_common_description">* Turquoise and Peach Party Wear Saree\n* Party Wear Dual Tone Saree\n* Saree Fabric : Art Silk and Chiffon\n* Blouse Fabric : Dupion</string>
+    <string name="product_common_specification">* Specification: Saree length is 5.5 meters; Saree width is 110 cm; Blouse fabric length is 80 cm.\n* Blouse is as shown in the picture. In-skirt fabric is not included\n* Stitching: Unstitched blouse. Blouse can be stitched upto Size 44</string>
+    <string name="product_common_conditions">* You can get the product from our office\n* Home delivery is also available\n* You can get the product within three working days after confirmation of the order by our customer care representative\n* Delivery charge: Inside Dhaka-49 Taka, outside Dhaka-99 Taka\n* You can pay online from your card or bKash, also you can pay cash to our office\n* Once the product is purchased,it will not be refundable\n* Your booking does not always guarantee product delivery. Product delivery is entirely subjected to availability of stock\n* Color of the products may slightly vary due to photography, lighting sources or your monitor setting/ PC resolution\n* Product delivery may be interrupted or delayed due to natural disaster or in case of political unrest\n* In case of delivery outside Dhaka, customers may have to collect certain products from the nearby courier service office\n* If the delivery location is outside of Dhaka city, advance payment is a requirement\n* Stock is limited!</string>
+
+    <string name="demo_location">Nikunja-2</string>
+
+    <string-array name="products_array">
+        <item>None</item>
+        <item>T-Shirt</item>
+        <item>Sharee</item>
+        <item>Shirt</item>
+        <item>Oranments</item>
+        <item>Kameez</item>
+        <item>Three Pis</item>
+        <item>Long Kamiz</item>
+        <item>Electronics</item>
+        <item>Hand Watch</item>
+        <item>School Bag</item>
+        <item>Pant</item>
+        <item>Cap</item>
+        <item>Breslets</item>
+    </string-array>
+
+    <string name="facebook_app_id">272146726557284</string>
+
+</resources>

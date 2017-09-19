@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".activity.ProductDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dialog_shape"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:weightSum="2.6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/off_white">
+
+                        <TextView
+                            android:id="@+id/cart_dialog_title_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Set Your Demand"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cart_dialog_quantity_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible"
+                        android:text="Desired Quantity: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/cart_item_count_bg"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/item_decrease"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/view_shape"
+                            android:textStyle="bold"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:onClick="decreaseInteger"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/cart_item_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/item_increase"
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/view_shape"
+                            android:textStyle="normal"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:onClick="increaseInteger"
+                            android:text="+" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/cart_dialog_size_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="visible"
+                        android:text="Desired Size: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/size_unit_spinner"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        app:ms_dropdown_max_height="350dp"
+                        app:ms_dropdown_height="wrap_content"
+                        android:hint="L-size"
+                        android:background="@drawable/view_shape"
+                        app:ms_background_color="@color/off_white"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".6"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/cart_submit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        android:text="Submit"
+                        android:textColor="@color/white_text_color"
+                        android:background="@drawable/common_button_bg"
+                        android:foreground="?android:attr/selectableItemBackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center_horizontal|bottom">
+
+                    <TextView
+                        android:id="@+id/cart_dialog_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="You can see your cart list from cart menu"
+                        android:textColor="@color/contact_profile_blue"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/cancle_shape"
+        android:src="@drawable/ic_action_content_clear" />
+
+</RelativeLayout>

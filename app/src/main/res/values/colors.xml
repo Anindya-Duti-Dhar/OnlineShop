@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#b0392c</color>
+    <color name="PrimaryYoColor">#DC4837</color>
+
+    <color name="YoColor">#25a071</color>
+    <color name="list_background">#FFFFFF</color>
+    <color name="timeline_item_selector">#ccc</color>
+    <color name="colorPrimary">#26a69a</color>    <!--#28b99a-->
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark">#1a746b</color>
+    <color name="colorAccent">#7995a4</color>
+    <color name="app_black_transparent">#97000000</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <color name="text">#ff221f1f</color>
+    <color name="text_subdued">#ff615e5c</color>
+    <color name="window_bg">#ffd4cece</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="myView_toolbar">#40B1B2</color>
+    <color name="myView_homebg">#3DB2B3</color>
+
+    <color name="reverie_primary">#A9A9A9</color>
+    <color name="reverie_accent">#A9A9A9</color>
+    <color name="reverie_dark_primary">#18218A</color>
+    <color name="reverie_bg">#f7f7f7</color>
+
+    <color name="off_white">#F5F5F5</color>
+    <color name="white_text_color">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="android_blue">#46AEE0</color>
+    <color name="ash_color">#acacac</color>
+    <color name="ash_color_light">#E2E2E2</color>
+    <color name="White">#FFFFFF</color>
+    <color name="dip_red">#FF0000</color>
+    <color name="color_primary_green"> #338C6A</color>
+    <color name="color_primary_green_dark">#388e3c</color>
+    <color name="ripple_green">#26a69a</color>
+    <color name="fab_color_ripple">#7b1fa2</color>
+    <color name="status_bar">#de4256</color>
+    <color name="fb_blue">#5B76B3</color>
+    <color name="marun">#DC4837</color>
+    <color name="magenta_color">#EB54AA</color>
+    <color name="fab_color_mesage">#26c6DA</color>
+    <color name="ripple_blue">#1a237e</color>
+
+    <color name="card_bg">#acacac</color>
+
+    <color name="pressed_blue">#FF7294DF</color>
+    <color name="pressed_color_for_hot_pink">#80FFFFFF</color>
+    <color name="hot_pink">#80FFFFFF</color>
+    <color name="background_light">#75ffffff</color>
+    <color name="Lemon">#bce102</color>
+
+    <color name="home_border">#c6c5c5</color>
+    <color name="home_text">#e5e9ed</color>
+
+
+
+    <color name="tab_color">#22958a</color>   <!--#1a746b#0D9E7D-->
+    <color name="chat_bg">#e7f7fe</color>
+
+    <color name="border_user_image">#376AA1</color>
+    <color name="invite_button">#4bb1e3</color>
+
+    <color name="contact_list_item_number">#737373</color>
+    <color name="contact_list_item_name">#000000</color>
+    <color name="contact_list_bg">#e7f7fe</color>
+    <color name= "chat_list_user">#107db7</color>
+    <color name= "chat_list_chat">#737373</color>
+    <color name= "chat_list_item_divider">#c9c9c9</color>
+
+    <color name= "contact_profile_blue">#107db7</color>
+    <color name= "contact_profile_ash">#7995a4</color>
+    <color name= "contact_profile_darkBlue">#08427a</color>
+
+    <color name="dark_sky_blue">#4bb1e3</color>
+    <color name="purple_add_friend">#9670ae</color>
+    <color name="more_button_bg">#c6aa7b</color>
+    <color name="tab_selector_border">#107db7</color>
+
+    <color name="contact_list_image_bg">#D3E2E9</color>
+    <color name="my_text_message_background">#107db7</color>
+
+    <color name="login_text">#e7f7fe</color>
+
+    <color name="conversation_toolbar_no_image_background">#6e93b3</color>
+    <color name="talk_appbar_topup_bg">#2470a5</color>
+    <color name="sip_call_friend_image_animation">#bce102</color>
+
+    <color name="common_page_bg">#e7f7fe</color>
+    <color name="dip_yellow">#ffc503</color>
+    <color name="soft_red">#ee2c2c</color>
+
+    <color name="main_yellow">#fbd83a</color>
+    <color name="main_pink">#f4826a</color>
+    <color name="status_bar1">#86f4826a</color>
+
+
+    <color name="divider">#B6B6B6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="chrome_grey">#F2F2F2</color>
+
+    <!--Material Colors-->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="secondary_text_transparent_70">#B3727272</color>
+
+    <color name="red">#F44336</color>
+    <color name="pink">#FF4081</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deepblue">#7C4DFF</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#448AFF</color>
+    <color name="lightblue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="lightgreen">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deeporange">#FF5722</color>
+    <color name="brown">#795548</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="bluegrey">#607D8B</color>
+
+    <color name="trans_black_75">#BF000000</color>
+
+    <color name="trans_black_50">#80000000</color>
+
+    <color name="trans_black_25">#40000000</color>
+
+    <color name="green_theme">#017C67</color>
+    <color name="green_theme_dark">#00715C</color>
+    <color name="green_theme_pink">#AF3F3F</color>
+
+    <color name="product_card">#f8fafc</color>
+
+</resources>

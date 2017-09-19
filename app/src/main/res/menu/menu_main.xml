@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.learn2crack.navigationdrawer.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/cart"
+        android:orderInCategory="100"
+        android:title="@string/action_cart"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/howToBuy"
+        android:orderInCategory="100"
+        android:title="@string/action_howToBuy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/returnPolicy"
+        android:orderInCategory="100"
+        android:title="@string/action_returnPolicy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/loginLogout"
+        android:orderInCategory="100"
+        android:title="@string/action_loginLogout"
+        app:showAsAction="never" />
+</menu>

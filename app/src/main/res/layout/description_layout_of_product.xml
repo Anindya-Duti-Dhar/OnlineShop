@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ProductDetails">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/product_description_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1px"
+        android:background="@color/white"
+        android:elevation="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <!--   Recycler View Item Row   -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:weightSum="3"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/product_description_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+
+                        <View
+                            android:id="@+id/product_description_tab_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:visibility="visible"
+                            android:background="@color/ripple_green" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/ash_color" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/product_conditions_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Conditions"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+
+                        <View
+                            android:id="@+id/product_conditions_tab_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:visibility="gone"
+                            android:background="@color/ripple_green" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/ash_color" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/product_review_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Review"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal"/>
+
+                        <View
+                            android:id="@+id/product_review_tab_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:visibility="gone"
+                            android:background="@color/ripple_green" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/ash_color_light" />
+
+                <LinearLayout
+                    android:id="@+id/product_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/product_description_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Descriptions: "
+                        android:textColor="@color/contact_profile_darkBlue"
+                        android:textSize="14sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/product_description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/product_common_description"
+                        android:textColor="@color/trans_black_75"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/product_specifications_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Size/Specifications: "
+                        android:textColor="@color/contact_profile_darkBlue"
+                        android:textSize="14sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/product_specifications_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/product_common_specification"
+                        android:textColor="@color/trans_black_75"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product_conditions_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/product_conditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="@string/product_common_conditions"
+                        android:textColor="@color/trans_black_75"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/product_review_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/product_review_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="You are seeing the average customer feeling of this product"
+                        android:textColor="@color/contact_profile_darkBlue"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/product_review_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Now tell us, what is your feeling??"
+                        android:textColor="@color/green"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                    <com.hsalf.smilerating.SmileRating
+                        android:id="@+id/product_review_smile_rating"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/product_review_rating_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:text="Submit Your Feeling"
+                        android:textColor="@color/white_text_color"
+                        android:textAllCaps="false"
+                        android:background="@drawable/common_button_bg"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

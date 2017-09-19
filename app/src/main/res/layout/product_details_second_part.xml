@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.ProductDetails">
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Product Details :"
+                android:textColor="@color/contact_profile_darkBlue"
+                android:textSize="16sp" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/description_layout_of_product" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/related_products_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:gravity="left"
+                android:text="Related Products :"
+                android:textColor="@color/contact_profile_darkBlue"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/more_same_product_details_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="Get more"
+                android:textColor="@color/white_text_color"
+                android:textAllCaps="false"
+                android:background="@drawable/common_button_bg"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/related_loading_progress"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/related_no_internet_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:src="@drawable/nointernet_2x_1x"/>
+
+                <ProgressBar
+                    android:id="@+id/related_progress"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/yellow"
+                    android:fitsSystemWindows="true"
+                    android:layout_centerInParent="true"
+                    tools:targetApi="lollipop" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/relatedProductsItemRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_margin="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
